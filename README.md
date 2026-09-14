@@ -5,3 +5,4 @@ To Do:
 - Ensure password is 8 characters long and includes a special character and one capital letter
 	- If not, reprompt the user
  - Store credentials
+ - Let user continue to add more and more usernames and passwords until user exits the program
