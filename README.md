@@ -4,3 +4,4 @@ To Do:
   - If not, reprompt the user
 - Ensure password is 8 characters long and includes a special character and one capital letter
 	- If not, reprompt the user
+ - Store credentials
