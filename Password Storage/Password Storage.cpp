@@ -110,3 +110,8 @@ int main()
 		return 0;
 
 }
+// Hello, my name is Marco. If you're reading this, you probably found this through the listed projects section on my resume. 
+// Thank you for taking the time to look at this and for your consideration! I'm currently a Dev/SysOps professional with a strong interest in programming and software development. 
+// I have experience in various programming languages and frameworks, and I enjoy solving complex problems through code. 
+// If you have any questions or would like to discuss potential opportunities, please feel free to reach out. 
+// Thank you again for your time and consideration!
