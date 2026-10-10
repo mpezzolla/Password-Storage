@@ -98,10 +98,10 @@ int main()
 		cout << "The vector contains these credentials:" << endl;
 
 		for (const auto& name : u1) {
-			std::cout << name << endl << " "; //displays usernames stored in the vector
+			cout << name << endl << " "; //displays usernames stored in the vector
 		}
 		for (const auto& pass : p1) {
-			std::cout << pass << endl << " "; //displays passwords stored in the vector
+			cout << pass << endl << " "; //displays passwords stored in the vector
 		}
 
 		cout << endl << endl << endl;
