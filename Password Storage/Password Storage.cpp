@@ -86,7 +86,9 @@ void Username_Password_Conditions_and_Display(string username, string password)
 
 int main()
 {
-		cout << "Please Sign in Below" << endl;
+		cout << "Please Sign in Below. Username must be 8 characters long and not have any spaces" << endl;
+		cout << "Password must be at least 8 characters long and have at least one special character" << endl;
+
 		cout << "Username:" << endl;
 		getline(cin, username); //to check for spaces in username
 		cout << "Password:" << endl;
