@@ -104,7 +104,9 @@ int main()
 
 		cout << endl << endl;
 		cout << "Goodbye!" << endl;
-
+		cout << "Enter any key to exit" << endl;
+		string exit;
+		cin >> exit;
 		return 0;
 }
 
