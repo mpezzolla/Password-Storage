@@ -8,9 +8,10 @@ using namespace std;
 
 string username;
 string password;
+string close;
+string user_input; //user input has to be string to allow for any key to be pressed to exit the program, but if the user presses 5, they can enter another set of credentials
 vector<string> u1 = {}; //dynamic storage for usernames
 vector<string> p1 = {}; //dynamic storage for passwords
-int user_input;
 
 void message1() {
 	cout << "Username must be 8 characters long and not have any spaces" << endl;
@@ -32,6 +33,12 @@ bool hasSpace(const string& s) {
 	for (char c : s)
 		if (isspace(c)) return true; // checks if any character is a space
 	return false;
+}
+void end_program() {
+	cout << endl << endl;
+	cout << "Goodbye!" << endl << endl;
+	cout << "Enter any key to exit" << endl;
+	cin >> close;
 }
 void Username_Password_Conditions_and_Display(string username, string password)
 {
@@ -61,7 +68,7 @@ void Username_Password_Conditions_and_Display(string username, string password)
 	cin >> user_input;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-	if (user_input == 5) {		
+	if (user_input == "5") {
 		message1();
 		message2();
 		cout << "Username:" << endl;
@@ -85,7 +92,9 @@ void Username_Password_Conditions_and_Display(string username, string password)
 		cout << endl << "Passwords:" << endl;
 		for (const auto& pass : p1) {
 			cout << pass << endl << " "; //displays passwords stored in the vector
+
 		}
+		end_program();
 	}
 
 }
@@ -101,12 +110,6 @@ int main()
 		cout << "Password:" << endl;
 		cin >> password;
 		Username_Password_Conditions_and_Display(username, password);
-
-		cout << endl << endl;
-		cout << "Goodbye!" << endl;
-		cout << "Enter any key to exit" << endl;
-		string exit;
-		cin >> exit;
 		return 0;
 }
 
